@@ -24,7 +24,7 @@ int main(int argc, char* argv[]) {
 
         if (isdigit(argv[3][0])) {
             int size = stoi(string(argv[3]));
-            if (size < 0 || size > 1000000) {
+            if (size < 1 || size > 1000000) {
                 cout << "Invalid input size, please pick a size ranging from 1 to 1000000" << endl;
                 return 1;
             }
